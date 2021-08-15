@@ -1,0 +1,25 @@
+.products-slider {
+	margin-top: rem-calc(50);
+	margin-bottom: rem-calc(50);
+}
+
+.swiper-pagination-bullets {
+	display: flex;
+	justify-content: center;
+	width: inherit;
+	margin-top: rem-calc(20);
+	column-gap: rem-calc(10);
+	grid-row-start: 2;
+
+	span {
+		display: block;
+		width: rem-calc(14);
+		height: rem-calc(14);
+		border-radius: 50%;
+		cursor: pointer;
+		background-color: $yellow;
+		&.swiper-pagination-bullet-active {
+			background-color: $black;
+		}
+	}
+}

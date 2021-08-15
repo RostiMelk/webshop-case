@@ -1,0 +1,19 @@
+.navbar {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: rem-calc(90);
+	}
+
+	&__logo {
+		font-size: rem-calc(22);
+	}
+
+	&__nav {
+		display: flex;
+		column-gap: rem-calc(40);
+	}
+}

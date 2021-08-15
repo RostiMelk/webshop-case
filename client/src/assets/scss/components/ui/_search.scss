@@ -1,0 +1,15 @@
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: rem-calc(40);
+	column-gap: rem-calc(16);
+	&__input {
+		width: 100%;
+		max-width: rem-calc(600);
+		height: rem-calc(50);
+		border-radius: $global-radius;
+		border: rem-calc(1) solid $black;
+		padding: rem-calc(16);
+	}
+}

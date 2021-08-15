@@ -1,0 +1,43 @@
+.product-slide {
+	display: flex;
+	position: relative;
+	align-items: flex-end;
+	height: rem-calc(500);
+	padding: rem-calc(32);
+	border-radius: $global-radius;
+	overflow: hidden;
+	background-position: center;
+	background-size: cover;
+
+	.product {
+		width: rem-calc(300);
+		max-width: 100%;
+		padding: rem-calc(32);
+		border-radius: $global-radius;
+		color: $black;
+		text-decoration: none;
+		background-color: $white;
+		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+		&__discount {
+			transform: translate(50%, -50%);
+		}
+	}
+}
+
+.swiper-slide-active {
+	.product-slide:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: rem-calc(10);
+		content: '';
+		background-color: $yellow;
+		animation-name: grow;
+		animation-duration: inherit;
+		animation-timing-function: linear;
+		transform: scaleX(0);
+		transform-origin: left;
+	}
+}

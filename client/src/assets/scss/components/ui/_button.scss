@@ -1,0 +1,31 @@
+.button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	min-width: rem-calc(44);
+	height: rem-calc(44);
+	border: 0;
+	border: rem-calc(1) solid darken($yellow, 10);
+	border-radius: $global-radius;
+	color: $black;
+	cursor: pointer;
+	background-color: $yellow;
+	transition: all 0.2s ease-in-out;
+
+	&:hover,
+	&:focus {
+		background-color: darken($yellow, 5);
+	}
+
+	&--is-secondary {
+		border: rem-calc(1) solid $black;
+		background: $white;
+	}
+	&--is-disabled {
+	}
+	&--has-icon {
+	}
+	&--has-text {
+		column-gap: rem-calc(20);
+	}
+}

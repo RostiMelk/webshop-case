@@ -1,0 +1,12 @@
+.products-wrapper {
+	padding-top: rem-calc(32);
+	padding-bottom: rem-calc(32);
+	background-color: $gray;
+}
+
+.products {
+	&__grid {
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: rem-calc(22);
+	}
+}

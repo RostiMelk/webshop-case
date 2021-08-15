@@ -1,0 +1,23 @@
+.loading {
+	margin-top: rem-calc(40);
+	margin-bottom: rem-calc(40);
+
+	&__element {
+		display: block;
+		width: rem-calc(80);
+		height: rem-calc(80);
+		margin-right: auto;
+		margin-left: auto;
+		&:after {
+			display: block;
+			box-sizing: border-box;
+			width: inherit;
+			height: inherit;
+			border: rem-calc(6) solid $black;
+			border-color: $black transparent $black transparent;
+			border-radius: 50%;
+			content: '';
+			animation: spin 1.2s linear infinite;
+		}
+	}
+}
